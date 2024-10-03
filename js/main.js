@@ -12,8 +12,8 @@ function App() {
         wine: 12,
         whiskey: 43,
         brandy: 40,
-        rum: 40,
-        
+        rum: 35,
+        gin: 38,
     };
 
     const convertAlcohol = () => {
@@ -46,6 +46,7 @@ function App() {
                             <option value="whiskey">Виски</option>
                             <option value="brandy">Коньяк</option>
                             <option value="rum">Ром</option>
+                                 <option value="gin">Джин</option>
                         </select>
 
                         <input
@@ -69,14 +70,21 @@ function App() {
                             <option value="whiskey">Виски</option>
                             <option value="brandy">Коньяк</option>
                             <option value="rum">Ром</option>
+                                 <option value="gin">Джин</option>
                         </select>
 
-                        <h2>Эквивалент: {convertAlcohol()} литров {outputAlcohol === 'beer' ? 'пива' : outputAlcohol === 'vodka' ? 'водки' : outputAlcohol === 'wine' ? 'вина' : outputAlcohol === 'whiskey' ? 'виски' : 'коньяка' : outputAlcohol === 'rum' ? 'виски' : 'Рома' }</h2>
+                        <h2>Эквивалент: {convertAlcohol()} литров {
+                            outputAlcohol === 'beer' ? 'пива' :
+                            outputAlcohol === 'vodka' ? 'водки' :
+                            outputAlcohol === 'wine' ? 'вина' :
+                            outputAlcohol === 'whiskey' ? 'виски' :
+                            outputAlcohol === 'brandy' ? 'коньяка' :
+                            outputAlcohol === 'rum' ? 'рома' :
+                            outputAlcohol === 'gin' ? 'джина' ''
+                        }</h2>
                     </div>
                 </div>
             </div>
-
-            
         </>
     );
 }

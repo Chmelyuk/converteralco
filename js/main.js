@@ -80,7 +80,7 @@ function App() {
                             outputAlcohol === 'whiskey' ? 'виски' :
                             outputAlcohol === 'brandy' ? 'коньяка' :
                             outputAlcohol === 'rum' ? 'рома' :
-                            outputAlcohol === 'gin' ? 'джина' ''
+                            outputAlcohol === 'gin' ? 'джина' : ''
                         }</h2>
                     </div>
                 </div>
